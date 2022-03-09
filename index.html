@@ -6,12 +6,12 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Detecting Concealed Gun</title>
-    <link rel="icon" type="image/png" href="./NeRV_files/gun_1.png" />
-    <link rel="stylesheet" href="./NeRV_files/font-awesome.min.css" />
-    <link rel="stylesheet" href="./NeRV_files/codemirror.min.css" />
-    <link rel="stylesheet" href="./NeRV_files/app.css" />
-    <link rel="stylesheet" href="./NeRV_files/bootstrap.min.css" />
+    <title>Matching shade guide</title>
+    <link rel="icon" type="image/png" href="./Matching__files/teeht.png" />
+    <link rel="stylesheet" href="./Matching__files/font-awesome.min.css" />
+    <link rel="stylesheet" href="./Matching__files/codemirror.min.css" />
+    <link rel="stylesheet" href="./Matching__files/app.css" />
+    <link rel="stylesheet" href="./Matching__files/bootstrap.min.css" />
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
@@ -37,24 +37,21 @@
     <div class="container" id="main">
         <div class="row">
             <h1 class="col-md-12 text-center">
-                Detecting Human with Concealed Gun by Learning <br />
-                from YouTube's CCTV Videos <br />
+                Mobile Application for Intelligent Dental Shade Matching <br />
+                Dental Shade Matching <br />
             </h1>
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
                 <ul class="list-inline">
                     <li>
-                        <a href="https://www.linkedin.com/in/yupapornwanna">
-                            Yupaporn Wanna
+                        <a href="https://www.facebook.com/profile.php?id=100004105981657">
+                            Waraporn Sittiwong
                         </a>
                     </li>
                     <li>
-                        <a> Pimonpun Chachomphon </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/haemwaan-sivaraks-22434a13b/">
-                            Haemwaan Sivarakst
+                        <a href="https://www.facebook.com/lemon.kingkyja">
+                            Rattaporn Leenaracharoongruang
                         </a>
                     </li>
                     <li>
@@ -68,20 +65,20 @@
             <div class="col-md-8 col-md-offset-2 text-center">
                 <ul class="nav nav-pills nav-justified">
                     <li>
-                        <a href="https://drive.google.com/file/d/1DaDknW_-vSuzouiCgrSW_QjrJGWEsiTb/view?usp=sharing">
-                            <img src="./NeRV_files/report.JPG" height="120px" /><br />
+                        <a href="https://drive.google.com/file/d/1jy5H1ptt8TfoCGHlKmdHu75wCEuc44Ip/view?usp=sharing">
+                            <img src="./Matching__files/report.JPG" height="120px" /><br />
                             <h4><strong>Report</strong></h4>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="https://www.youtube.com/watch?v=XcfcuMSpp90&feature=youtu.be">
                             <img src="./NeRV_files/youtube_icon_dark.png" height="120px" /><br />
                             <h4><strong>Presentation Video</strong></h4>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="https://github.com/Peckkie/Concealed-Gun-Detector">
-                            <img src="./NeRV_files/github_pad.png" height="120px" /><br />
+                        <a href="https://github.com/waraporn19/Matching_Project">
+                            <img src="./Matching__files/github_pad.png" height="120px" /><br />
                             <h4><strong>Code</strong></h4>
                         </a>
                     </li>
@@ -89,48 +86,52 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>Example Results: Webpage(Prototype)</h3>
-                <hr>
-                <video id="v0" width="100%" autoplay="" loop="" muted="" controls="">
-                    <source src="./NeRV_files/Gun2.mp4" type="video/mp4" />
-                </video>
-            </div>
-        </div>
+
 
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>Abstract</h3>
                 <hr>
-                <img src="./NeRV_files/Capture2.JPG" class="img-responsive" alt="overview" /><br />
+                <img src="./Matching__files/Flowchart.png" class="img-responsive" alt="overview" /><br />
                 <p class="text-justify">
-                    &emsp;&emsp;&emsp;Nowadays, there are a lot of efforts to use
-                    intelligent algorithms to detect gun related incidents in CCTV.
-                    However, this approach cannot prevent the gun incidents before they
-                    happen. So, we present here an algorithm and the system which can
-                    detect people with concealed gun in order to early alarm before the
-                    incident happens.
-                    <br />&emsp;&emsp;&emsp;We develop the algorithm by first collecting
-                    videos of gun incidents from YouTube.com. We then prepare the
-                    dataset by dividing a video into 2 parts: the concealed gun part and
-                    the label part. After that, we use PoseFlow to track individual and
-                    train different learning algorithms on the dataset. The experiment
-                    shows that Random Forest outperforms Support Vector Machine,
-                    Decision Tree, Logistic Regression by having 77%, Accuracy, 76%
-                    Recall, 63% Precision and 69% F1-Score. <br />&emsp;&emsp;&emsp;For
-                    the system we develop API which detects concealed gun based on
-                    Random Forest algorithm. In order to demonstrate and debug the
-                    system, we also develop the Web Application that take a video as an
-                    input and output probabilities of having concealed gun for all
-                    people in the video. Moreover, when a subject with concealed gun is
-                    detected, the system sends Line notification to the pre-configured
-                    user.
+                    &emsp;&emsp;&emsp;Nowadays, dentures are restorations to make your teeth 
+                    look as beautiful as real teeth. Making dentures requires the expertise 
+                    and precision of the dentist in order to get the correct color of teeth. 
+                    Currently, there are two methods for choosing denture colors. The dentist 
+                    uses the naked eye to match the color of the teeth. By comparing with 
+                    the teeth whitening kit or shading guide. causing limitations in tooth 
+                    color matching, such as eye strain of dentists or the light in the room 
+                    that hits the teeth The second method dentists use to match teeth color 
+                    is by using a tooth color picker. For example, a tooth color spectrometer 
+                    is highly accurate. But this tool is bulky and expensive.
+                    <br />&emsp;&emsp;&emsp;The developers therefore developed an automatic 
+                    denture color selection system through a mobile camera to quickly match 
+                    the color of the teeth. and promote learning to choose denture colors 
+                    for dental students Using artificial intelligence (AI), the system uses 
+                    training data and denture image testing to create a model. The method 
+                    starts by taking a picture of the denture (Input) and calculating the 
+                    color value of each denture. It is then imported into the artificial 
+                    intelligence (AI) process to categorize according to the characteristics 
+                    of each denture color value. Output: There is a denture matching 
+                    notification application, consisting of 1. Names Matched. Guide Shades 
+                    2. Matched Guide Shade Tooth Groups 3. Named Matched Guide Shades 
+                    4. VITA 3D Master Guide Shades that are like Matched Guide Shades. 
+                    <br />&emsp;&emsp;&emsp;The main advantage of this system is that the 
+                    artificial intelligence (AI) in selecting the denture color by taking 
+                    pictures with a mobile camera will allow students to check the denture 
+                    color faster. Immediate access to dental image data from dental photographs 
+                    also helps students remember more CIE L a b the tones of each shade 
+                    recommendation. They can also recognize similar light guides as well. 
+                    Because the application developer has developed the application to achieve 
+                    the following results: 1. Matching guide shade name 2. Matching guide shade 
+                    group 3. Matching guide shade name close to 4 VITA 3D Master Guide Shades 
+                    are comparable to Matched Guide Shades. The system also collects tooth 
+                    color analysis data in the database for further analysis.
                 </p>
             </div>
         </div>
         <!-- Awards!!!!!!!!!! -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>Awards</h3>
                 <hr>
@@ -161,9 +162,9 @@
             </div>
         </div>
 
-        <!-- rrrrr -->
+        rrrrr
 
-        <div class="w3-content w3-display-container" style="max-width:700px; margin-top: 30px; margin-bottom: 30px;">
+        <!-- <div class="w3-content w3-display-container" style="max-width:700px; margin-top: 30px; margin-bottom: 30px;">
             <img class="mySlides" src="NeRV_files/IMG04.jpg" style="width:100%">
             <img class="mySlides" src="NeRV_files/IMG03.jpg" style="width:100%">
             <img class="mySlides" src="NeRV_files/IMG05.jpg" style="width:100%">
@@ -179,9 +180,9 @@
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
                 <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
             </div>
-        </div>
+        </div> -->
         <!-- rrrrr -->
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>Presentation Video for Prime Minister's Digital Award 2020</h3>
                 <hr>
@@ -205,7 +206,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --> 
 
         <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
